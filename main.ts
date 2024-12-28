@@ -1,8 +1,6 @@
 import { BskyAgent } from '@atproto/api';
-import * as dotenv from 'dotenv';
+// import * as dotenv from 'dotenv';
 import * as process from 'node:process';
-
-dotenv.config();
 
 const port = parseInt(Deno.env.get("PORT") ?? "8000");
 
