@@ -22,7 +22,4 @@ async function main() {
     console.log("Just posted!")
 }
 
-main();
-
-
-Deno.serve({port: port}, main());
+main()
