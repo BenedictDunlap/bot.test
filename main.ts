@@ -18,7 +18,7 @@ const agent = new BskyAgent({
 
 
 async function main() {
-    await agent.login({ identifier: process.env.BLUESKY_USERNAME!, password: process.env.BLUESKY_PASSWORD!})
+    await agent.login({ identifier: node:process.env.BLUESKY_USERNAME!, password: node:process.env.BLUESKY_PASSWORD!})
     await agent.post({
         text: ":)"
     });
@@ -34,7 +34,7 @@ const scheduleExpression = '0 */3 * * *'; // Run once every three hours in prod
 
 const job = new CronJob(scheduleExpression, main); // change to scheduleExpressionMinute for testing
 
-job.start();
+// job.start();
 
 
 Deno.serve({port: port}, job.start());
