@@ -1,7 +1,7 @@
 import { BskyAgent } from '@atproto/api';
 import * as dotenv from 'dotenv';
 import { CronJob } from 'cron';
-import * as process from 'process';
+import * as process from 'node:process';
 
 dotenv.config();
 
