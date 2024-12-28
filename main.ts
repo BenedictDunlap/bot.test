@@ -1,4 +1,4 @@
-import { BskyAgent } from '@atproto/api';
+import { BskyAgent } from 'npm:@atproto/api';
 // import * as dotenv from 'dotenv';
 import * as process from 'node:process';
 
